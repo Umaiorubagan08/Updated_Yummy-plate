@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shopping Cart </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <button type="button" id="cart" class="cart-button" aria-label="Shopping Cart" onclick="toggleCart()">
+            <i class='bx bxs-cart-alt'></i> Cart
+        </button>
+
+        <div id="cartModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleCart()">&times;</span>
+                <h2>Your Cart</h2>
+                <ul id="cartItems">
+                    <li> Item: 1 </li>
+                    <li> Item: 2 </li>
+                    <li> Item: 3 </li>
+                </ul>
+                <div class="total">
+                    <strong> Total:  </strong> RS: 630.00
+                </div>
+                <button class="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
